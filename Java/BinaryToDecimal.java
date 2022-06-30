@@ -8,23 +8,23 @@ class Main {
         // DO NOT USE ARGUMENTS FOR INPUTS
         // E.g. 'Scanner' for input & 'System.out' for output
          Scanner sc=new Scanner(System.in);
-        double n=sc.nextDouble();
-            System.out.println((int)n);
+         long n=sc.nextLong();
+            // System.out.println((int)n);
 
-        // double sum=0;
-        // double count=0;
-        // while(n>0){
-        //     double digit=n%10;
-        //     double res=0;
-        //     if(digit!=0){
-        //      res=Math.pow(2,count);
-        //     }else{
-        //         res=0;
-        //     }
-        //     sum=sum+digit*res;
-        //     n=n/10;
-        //     count++;
-        // }
-        //     System.out.println((int)sum);
+        long sum=0;
+        long count=0;
+        while(n>0){
+            long digit=n%10;
+            long res=0;
+            if(digit!=0){
+             res=(long)Math.pow(2,count);
+            }else{
+                res=0;
+            }
+            sum=sum+digit*res;
+            n=n/10;
+            count++;
+        }
+            System.out.println(sum);
     }
 }
