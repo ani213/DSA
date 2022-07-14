@@ -1,4 +1,5 @@
-
+/*The JavaScript Function call() method is used to
+ call a function contains this value and an argument provided individually. */
 
 
 let obj={
