@@ -23,3 +23,17 @@ const person = {
     }
   };
   console.log(person.id);
+
+/* here original Array are changed inside function
+  we pass as argument in that function.
+*/
+
+let arr=[1,2,3,4,5];
+let getNewArr=(arr)=>{
+    for(let i=0;i<arr.length;i++){
+        arr[i]=arr[i]*2;
+    }
+    console.log(arr);
+}
+getNewArr(arr);
+console.log(arr,"originaml");// here original array is changed;
